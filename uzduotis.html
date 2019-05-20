@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+    
+	<head>
+
+        	<meta charset="utf-8">
+        
+        <title>A</title>
+        <link rel="stylesheet" type="text/css" href="stilius.css">
+        <style>
+            body {
+                background-image: url("background4.jpg");
+                }
+        </style>
+    </head>
+    <body>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>Matematikos užduotis jaunesnių klasių moksleiviams</h1>
+        <p6> Pirma užduotis. Atlik skaičiavimo veiksmus:</p6>
+        <p>
+            <p1>1) Apskaičiuok: 5 + 5 <img id="a1" src="question.png" height = 40></p1>
+            <input id = "v1">
+            <button id = "v10" onclick=Patikrink(1) > Tikrink </button>
+        </p>
+    
+        <p>
+            <p2>2) Apskaičiuok: 6*8 <img id="a2" src="question.png" height = 40></p2>
+            <input id = "v2">
+            <button id = "v11" onclick=Patikrink(2) > Tikrink </button>
+        </p>
+
+        <p>
+            <p3>3) Apskaičiuok: 27/3 <img id="a3" src="question.png" height = 40></p3>
+            <input id = "v3">
+            <button id = "v6" onclick=Patikrink(3) > Tikrink </button>
+        </p>
+
+        <p>
+            <p4>4)  Išspręsk lygtį: x^2 + 4x + 4 = 0 <img id="a4" src="question.png" height = 40> </p4>
+            <input id = "v4">
+            <button id = "v8" onclick=Patikrink(4) > Tikrink </button>
+        </p>
+
+        <p>
+            <p5>5) Apskaičiuok: 5^4/5^2 <img id="a5" src="question.png" height = 40></p5>
+            <input id = "v5">
+            <button id = "v10" onclick=Patikrink(5) > Tikrink </button>
+        </p>
+        <button id = "v12" onclick=TikrinkViska(1) > Tikrink Viską </button>
+        <p><img id="ok" src="question.png" height = 100></p>
+
+        <script>
+            function Patikrink(indexas)
+            {
+
+                var y = document.getElementById("v" + indexas).value
+                if (indexas == 1 && y == 10)
+                    document.getElementById("a1").src="ok.png"
+                else if (indexas == 1)
+                    document.getElementById("a1").src="false.png"     
+                else if(indexas == 2 && y == 48)
+                    document.getElementById("a2").src="ok.png"
+                else if (indexas == 2)
+                    document.getElementById("a2").src="false.png"  
+                else if(indexas == 3 && y == 9)
+                    document.getElementById("a3").src="ok.png"
+                else if (indexas == 3)
+                    document.getElementById("a3").src="false.png"  
+                else if(indexas == 4 && y == -2)
+                    document.getElementById("a4").src="ok.png"
+                else if (indexas == 4)
+                    document.getElementById("a4").src="false.png"  
+                else if(indexas == 5 && y == 25)
+                    document.getElementById("a5").src="ok.png"
+                else if (indexas == 5)
+                    document.getElementById("a5").src="false.png"  
+                else alert ("Bandyk dar kartą!");
+
+            }
+            function TikrinkViska()
+            {
+                var a = document.getElementById("v1").value
+                var b = document.getElementById("v2").value
+                var c = document.getElementById("v3").value
+                var d = document.getElementById("v4").value
+                var e = document.getElementById("v5").value
+                if (a == 10 && b == 48 && c == 9 && d == -2 && e == 25)
+                    document.getElementById("ok").src="ok.png"
+                else document.getElementById("ok").src="false.png"
+            }
+        </script>
+
+    </body>
+</html>
